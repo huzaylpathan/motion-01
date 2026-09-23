@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>MOTION/01 — Built To Move</title>
+  <meta name="description" content="MOTION/01 — a cinematic automotive digital experience built with HTML, CSS and vanilla JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" aria-hidden="true">
+    <div class="loader-top"><span>MOTION/01</span><span>INITIALIZING</span></div>
+    <div class="loader-center"><span class="loader-number">00</span><span>/ 100</span></div>
+    <div class="loader-line"><i></i></div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><span></span></div>
+  <div class="progress" aria-hidden="true"><i></i></div>
+
+  <header class="nav">
+    <a class="brand magnetic" href="#hero">MOTION<span>/01</span></a>
+    <div class="nav-center">DIGITAL AUTOMOTIVE EXPERIENCE</div>
+    <button class="menu magnetic" type="button" aria-label="Open navigation" aria-controls="navOverlay" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="nav-overlay" id="navOverlay" aria-hidden="true">
+    <div class="nav-overlay-top">
+      <span class="brand">MOTION<span>/01</span></span>
+      <button class="nav-close magnetic" type="button" aria-label="Close navigation">
+        <span></span><span></span>
+      </button>
+    </div>
+    <ol class="nav-overlay-list">
+      <li><a href="#hero"><b>01</b><span>START</span></a></li>
+      <li><a href="#philosophy"><b>02</b><span>PHILOSOPHY</span></a></li>
+      <li><a href="#design"><b>03</b><span>DESIGN</span></a></li>
+      <li><a href="#performance"><b>04</b><span>PERFORMANCE</span></a></li>
+      <li><a href="#technology"><b>05</b><span>TECHNOLOGY</span></a></li>
+      <li><a href="#notebook"><b>06</b><span>NOTEBOOK</span></a></li>
+      <li><a href="#human"><b>07</b><span>EXPERIENCE</span></a></li>
+      <li><a href="#future"><b>08</b><span>FUTURE</span></a></li>
+      <li><a href="#final"><b>09</b><span>END</span></a></li>
+    </ol>
+    <div class="nav-overlay-foot">
+      <span>MOTION/01</span>
+      <span>2026</span>
+    </div>
+  </nav>
+
+  <aside class="index">
+    <a href="#hero" class="active"><b>01</b><span>START</span></a>
+    <a href="#philosophy"><b>02</b><span>PHILOSOPHY</span></a>
+    <a href="#design"><b>03</b><span>DESIGN</span></a>
+    <a href="#performance"><b>04</b><span>PERFORMANCE</span></a>
+    <a href="#technology"><b>05</b><span>TECHNOLOGY</span></a>
+    <a href="#notebook"><b>06</b><span>NOTEBOOK</span></a>
+    <a href="#human"><b>07</b><span>EXPERIENCE</span></a>
+    <a href="#future"><b>08</b><span>FUTURE</span></a>
+    <a href="#final"><b>09</b><span>END</span></a>
+  </aside>
+
+  <main>
+    <section id="hero" class="hero section-dark">
+      <div class="hero-image image-fallback" data-speed=".08"></div>
+      <div class="hero-grain"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-meta reveal">
+        <span>A STUDY IN</span>
+        <strong>MOVEMENT</strong>
+      </div>
+      <div class="hero-title">
+        <span class="line reveal-line">BUILT</span>
+        <span class="line outline reveal-line">TO MOVE<span class="dot">.</span></span>
+      </div>
+      <div class="hero-bottom reveal">
+        <span>01 / 09</span>
+        <span>SCROLL TO EXPLORE ↓</span>
+      </div>
+      <div class="hero-word" data-parallax="0.16">MOTION</div>
+    </section>
+
+    <section id="philosophy" class="editorial section-dark">
+      <div class="section-number">02</div>
+      <div class="eyebrow">PHILOSOPHY / 001</div>
+      <div class="editorial-copy reveal">
+        <h2>MORE<br>THAN<br><em>SPEED.</em></h2>
+        <p>Motion is not a number on a specification sheet. It is the relationship between machine, road and the person behind the wheel.</p>
+        <span class="micro">A FASTER TOMORROW</span>
+      </div>
+      <div class="wide-image philosophy-image reveal-image" data-cursor="VIEW" tabindex="0" role="img" aria-label="Automotive detail photograph"></div>
+      <div class="side-note">CURIOSITY<br>BUILDS<br>BETTER<br>ROADS</div>
+    </section>
+
+    <section id="design" class="design section-dark">
+      <div class="section-number">03</div>
+      <div class="eyebrow">DESIGN / 002</div>
+      <div class="design-copy reveal">
+        <h2>SCULPTED<br><em>BY AIR.</em></h2>
+        <p>Every curve has a purpose. Every line is a decision. Form follows function until the two become impossible to separate.</p>
+      </div>
+      <div class="design-gallery">
+        <div class="gallery-main reveal-image" data-cursor="VIEW" tabindex="0" role="img" aria-label="Full vehicle photograph"></div>
+        <div class="gallery-detail reveal-image" data-cursor="VIEW" tabindex="0" role="img" aria-label="Wheel detail photograph"></div>
+      </div>
+      <div class="vertical-note">FORM<br>FOLLOWS<br>FREEDOM ↗</div>
+    </section>
+
+    <section id="performance" class="performance section-dark">
+      <div class="performance-sticky">
+        <div class="section-number">04</div>
+        <div class="eyebrow">PERFORMANCE / 003</div>
+        <h2>NUMBERS<br>THAT <em>MOVE.</em></h2>
+        <p>Figures that turn intention into reality. Illustrative concept data — not a real vehicle.</p>
+      </div>
+      <div class="performance-stage">
+        <div class="performance-image" data-speed=".035"></div>
+        <div class="specs">
+          <article class="spec reveal">
+            <strong data-count="3.6" data-decimals="1">0</strong><small>0 — 100 / SEC</small>
+          </article>
+          <article class="spec reveal">
+            <strong data-count="306">0</strong><small>TOP SPEED / KM/H</small>
+          </article>
+          <article class="spec reveal">
+            <strong data-count="550">0</strong><small>POWER / HP</small>
+          </article>
+          <article class="spec reveal">
+            <strong data-count="770">0</strong><small>TORQUE / NM</small>
+          </article>
+          <article class="spec reveal">
+            <strong data-count="1977">0</strong><small>WEIGHT / KG</small>
+          </article>
+          <article class="spec reveal">
+            <strong>AWD</strong><small>DRIVETRAIN</small>
+          </article>
+          <article class="spec reveal">
+            <strong>V8</strong><small>4.0L TWIN-TURBO V8 ENGINE</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="technology" class="technology section-dark">
+      <div class="section-number">05</div>
+      <div class="eyebrow">TECHNOLOGY / 004</div>
+      <div class="tech-heading reveal">
+        <h2>INTELLIGENCE<br><em>IN MOTION.</em></h2>
+        <p>Advanced systems working in harmony with human instinct. From real-time adaptation to predictive performance, the machine learns the road.</p>
+      </div>
+      <div class="tech-system" role="tablist" aria-label="Technology systems">
+        <button class="tech-item active" data-tech="sensors" role="tab" aria-selected="true"><span>01</span><strong>SENSOR SUITE</strong><small>Sees further.</small></button>
+        <button class="tech-item" data-tech="software" role="tab" aria-selected="false"><span>02</span><strong>SOFTWARE CORE</strong><small>Adapts faster.</small></button>
+        <button class="tech-item" data-tech="interface" role="tab" aria-selected="false"><span>03</span><strong>INTERFACE</strong><small>Keeps you in control.</small></button>
+      </div>
+      <div class="tech-visual" aria-hidden="true">
+        <div class="tech-ring"></div>
+        <div class="tech-readout"><span id="techCode">SENSOR / 360°</span><strong id="techValue">READY</strong></div>
+      </div>
+    </section>
+
+    <section id="notebook" class="notebook section-dark">
+      <div class="section-number">06</div>
+      <div class="eyebrow">ENGINEERING NOTEBOOK / 005</div>
+      <div class="notebook-heading reveal">
+        <h2>IDEAS<br>INTO <em>MOTION.</em></h2>
+        <p>The experience is powered by the browser itself — scroll timelines, observers, transforms and carefully controlled motion.</p>
+      </div>
+      <div class="code-window reveal">
+        <div class="code-top"><span>motion.css</span><span>LIVE / 001</span></div>
+        <pre><code><span>.motion</span> {
+  <i>animation-timeline</i>: <b>view()</b>;
+  <i>animation-range</i>: <b>entry 0% cover 50%</b>;
+  <i>animation-name</i>: <b>fade-up</b>;
+}
+
+<span>@keyframes</span> fade-up {
+  from { <i>transform</i>: <b>translateY(80px)</b>; }
+  to   { <i>transform</i>: <b>translateY(0)</b>; }
+}</code></pre>
+      </div>
+      <div class="code-side">MODERN CSS<br>REAL EXPERIENCES<br><span>HTML / CSS / JS</span></div>
+    </section>
+
+    <section id="human" class="human section-dark">
+      <div class="human-image" data-cursor="VIEW" tabindex="0" role="img" aria-label="Driver cockpit photograph"></div>
+      <div class="human-overlay"></div>
+      <div class="section-number">07</div>
+      <div class="eyebrow">THE EXPERIENCE / 006</div>
+      <div class="human-copy reveal">
+        <h2>FEEL<br>THE <em>DIFFERENCE.</em></h2>
+        <p>More than a machine. It is a connection between human and road — an experience that stays with you long after the drive ends.</p>
+      </div>
+      <div class="human-caption">DESIGNED TO BE<br>REMEMBERED</div>
+    </section>
+
+    <section id="future" class="future section-dark">
+      <div class="future-image" data-speed=".06"></div>
+      <div class="future-overlay"></div>
+      <div class="section-number">08</div>
+      <div class="eyebrow">OUR VISION / 007</div>
+      <div class="future-copy reveal">
+        <h2>A CLEANER<br><em>TOMORROW.</em></h2>
+        <p>Performance and responsibility can coexist. The next generation of movement should be faster, smarter and lighter on the world around it.</p>
+      </div>
+      <div class="future-word">NEXT</div>
+    </section>
+
+    <section id="final" class="final section-dark">
+      <div class="section-number">09</div>
+      <div class="eyebrow">THE NEXT CHAPTER / 008</div>
+      <div class="final-title reveal">
+        <span>KEEP</span>
+        <span class="outline">MOVING<span class="dot">.</span></span>
+      </div>
+      <a href="#hero" class="final-link magnetic">RETURN TO START <span>↑</span></a>
+      <div class="final-footer">
+        <span>MOTION/01</span>
+        <span>BUILT WITH HTML / CSS / JS</span>
+        <span>2026</span>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-stage">
+      <div class="lightbox-image"></div>
+    </div>
+    <button class="lightbox-close" type="button" aria-label="Close image">
+      <span></span><span></span>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
